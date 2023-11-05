@@ -20,4 +20,5 @@ public interface IUsuarioService {
 	
 	boolean delete(Long idUsuario);
 
+	
 }

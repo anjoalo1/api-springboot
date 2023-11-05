@@ -11,6 +11,10 @@ import com.example.demo.domain.repository.IUsuarioRepository;
 import com.example.demo.persistence.entity.Usuario;
 import com.example.demo.persistence.mapper.IUsuarioMapper;
 
+
+//import lombok.AllArgsConstructor;
+
+
 @Repository
 public class UsuarioRepository implements IUsuarioRepository{
 	//crud usuarioresporitory

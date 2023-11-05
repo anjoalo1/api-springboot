@@ -3,7 +3,6 @@ package com.example.demo.domain.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.pojo.UsuarioPojo;
@@ -15,7 +14,7 @@ public class UsuarioService implements IUsuarioService {
 	
 	private final IUsuarioRepository iUsuarioRepository;
 	
-	@Autowired
+	
 	public UsuarioService(IUsuarioRepository iUsuarioRepository) {
 		this.iUsuarioRepository = iUsuarioRepository;
 	}
@@ -25,6 +24,7 @@ public class UsuarioService implements IUsuarioService {
 		// TODO Auto-generated method stub
 		return iUsuarioRepository.getAll();
 	}
+	
 
 	@Override
 	public Optional<UsuarioPojo> getUsuario(Long id) {

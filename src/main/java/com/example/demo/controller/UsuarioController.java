@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import java.util.List;
-import java.util.Optional;
+
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +20,8 @@ import com.example.demo.domain.service.IUsuarioService;
 public class UsuarioController {
 	
 	private final IUsuarioService iUsuarioService;
+	
+	
 
 	public UsuarioController(IUsuarioService iUsuarioService) {
 		this.iUsuarioService = iUsuarioService;
@@ -40,6 +42,8 @@ public class UsuarioController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(iUsuarioService.save(usuarioPojoNew));
 		
 	}
+	
+	/* nuevo comentario*/
 	
 	
 	
