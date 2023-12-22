@@ -18,6 +18,8 @@ public interface IUsuarioService {
 	UsuarioPojo save(UsuarioPojo newUsuarios);
 	
 	
+	
+	
 	boolean delete(Long idUsuario);
 
 	
